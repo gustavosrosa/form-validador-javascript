@@ -1,0 +1,51 @@
+:root {
+    --border-color-form: #ccc;
+    --button-submit-color: #6A27D7;
+}
+
+* {
+    font-family: "Helvetica";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Inputs limitados à largura do elemento pai*/
+}
+
+body {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 31.25rem;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.313rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--border-color-form);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-submit-color);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- O atributo defer é usado para fazer o código JS ser 
+         executado após a leitura completa do arquivo -->
+    <script src="./js/script.js" defer></script>
+    <title>Formulário com validação Javascript</title>
+</head>
+
+<body>
+    <h1>Form com validação Javascript</h1>
+    <form id="form">
+        <label for="name">Nome</label>
+        <input type="text" id="name">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+        
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password">
+
+        <label for="job">Situação de emprego: </label>
+        <select name="job" id="job">
+            <option value="">Você atualmente está buscando emprego?</option>
+            <option value="yes">Sim! Estou à procura</option>
+            <option value="no">Não! Já estou no mercado de trabalho</option>
+        </select>
+
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message"></textarea>
+
+        <button type="submit" id="button-submit">Enviar dados</button>
+        
+
+    </form>
+</body>
+
+</html>
